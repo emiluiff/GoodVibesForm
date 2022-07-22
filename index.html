@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta de Good Vibes</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">Encuesta de Good Vibes</h1>
+      <h2 class="tell-us">Cuéntanos algo positivo que te haya sucedido hoy</h2>
+    </header>
+
+    <main>
+      <form>
+        <div class="master-div">
+          <div class="labels">
+            <label for="nombre">Nombre:</label>
+          </div>
+          <div class="fields">
+            <input class="input-fields"
+              type="text"
+              name="nombre"
+              placeholder="Escribe tu nombre aquí"
+              required
+            />
+          </div>
+          <div class="labels">
+            <label for="email">Email:</label>
+          </div>
+          <div class="fields">
+            <input class="input-fields" type="email" name="email" placeholder="Escribe tu email aquí" required/>
+          </div>
+          <div class="labels">
+            <label for="numero"
+              >En una escala del 1-10, ¿cuánto lo puntuarías?</label>
+          </div>
+          <div class="fields">
+            <input class="input-fields"
+              type="number"
+              name="numero"
+              placeholder="Escribe un número del 1 al 10 aquí"
+              min="1"
+              max="10"
+            />
+          </div>
+          <div class="labels">
+            <label for="dropdown">¿Dónde sucedió?</label>
+          </div>
+          <div class="fields">
+            <select class="dropdown" name="lugarocurrido" required>
+              <option value="" selected>Elegir</option>
+              <option value="casa">En casa</option>
+              <option value="trabajo">En el trabajo</option>
+              <option value="calle">En la calle</option>
+              <option value="otro">Otro lugar</option>
+            </select>
+          </div>
+          <div class="labels">
+            <label for="momento">¿En qué momento del día sucedió?</label>
+          </div>
+          <div class="fields">
+            <ul>
+              <li class="radio">
+                <label><input class="round" type="radio" value="mañana" name="tiempo" />A la mañana</label>
+              </li>
+              <li class="radio">
+                <label><input class="round" type="radio" value="tarde" name="tiempo" />A la tarde</label>
+              </li>
+              <li class="radio">
+                <label><input class="round" type="radio" value="noche" name="tiempo"/>A la noche</label>
+              </li>
+            </ul>
+          </div>
+          <div class="labels">
+            <label for="emociones"
+              >¿Qué emociones sentiste?<span>
+                (Selecciona todas las que aplican)</span
+              ></label>
+          </div>
+          <div class="fields">
+            <ul>
+              <li class="radio">
+                <label
+                  ><input class="round" type="checkbox" value="felicidad" />Felicidad</label
+                >
+              </li>
+              <li class="radio">
+                <label><input class="round" type="checkbox" value="amor" />Amor</label>
+              </li>
+              <li class="radio">
+                <label
+                  ><input class="round" type="checkbox" value="entusiasmo" />Entusiasmo</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="labels">
+            <label for="descripción">Describe esa experiencia positiva:</label>
+          </div>
+          <div class="fields">
+            <textarea class="input-fields" placeholder="Escribe tu experiencia aquí"></textarea>
+          </div>
+          <button class="button" type="submit">Finalizar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div>
+        <p class="agradecimiento">¡Muchas gracias por su participación!</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
